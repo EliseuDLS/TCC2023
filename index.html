@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CINEC - Análise de filmes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Imagens/CINEC Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+            <img src="Imagens/CINEC Logo.png" alt="Logo CINEC" class="logo">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#filmes">Filmes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contato">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header id="home" style="background-image: url(Imagens/Imagem\ Fundo.png);">
+        <h1 class="text-white">A FICÇÃO CIENTÍFICA</h1>
+        <p>______________________________________________________________________________________________________________________________
+        </p>
+        <p id="ese" class="text-white">Já pensou se uma cena ou uma "manobra" em um filme de ficção poderia ser
+            replicada na vida real?</p>
+        <p id="ese" class="text-white">Não fique na dúvida! Este site tem o objetivo de explicar de uma forma
+            dinâmica essas situações através da CIÊNCIA</p>
+    </header>
+    <main id="filmes">
+        <div id="filmesanalis">
+            <h1>FILMES ANALISADOS</h1>
+            <p>Confira agora 10 filmes que abordam esse tema e tente acertar se é <a id="pos">POSSÍVEL</a> ou <a id="npos">NÃO É POSSÍVEL</a></p>
+        </div>
+        <section class="row">
+            <div class="card mb-3 col-sm-12 col-md-3 col-lg-3">
+                <img src="Pôsters/Pôster_IndianaJones.jpg" class="card-img-top" alt="...">
+                <div class="card-body filme1">
+                    <h2 id="tituloFilme" class="card-title">Indiana Jones e os Caçadores da Arca Perdida (1981)</h2>
+                    <p id="descricao" class="card-text">O arqueólogo Indiana Jones precisa encontrar a Arca da Aliança, uma relíquia bíblica que contém os dez mandamentos. Como o portador do artefato se torna invencível, os nazistas também vão fazer de tudo para adquirir esse precioso objeto.</p>
+                    <div class="d-grid gap-2 mx-auto">
+                        <div class="row">
+                            <div class="modal fade" id="ModalCena">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-body" width="100%">
+                                            <video controls class="embed-responsive-item" width="100%">
+                                                <source src="Filmes/Cena - Filme Indiana Jones.mp4">
+                                                Seu navegador não suporta o elemento de vídeo.
+                                            </video>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Descubra</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body questions-container" id="filme1">
+
+                                            <div class="questions">
+                                                Você acha que essa cena pode ser possível?
+                                            </div>
+                                            <div class="text-success">
+                                                <div>Parabens c acerto</div>
+
+                                                Explicação:
+                                            </div>
+                                            <div class="text-danger">
+                                                <div>Puts c erro</div>
+
+                                                Explicação:
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="questions-buttons">
+                                                <a href="#p2">
+                                                    <button class="btn btn-primary" id="sim">Sim</button>
+                                                    <button class="btn btn-danger" id="nao">Não</button>
+                                                </a>
+                                            </div>
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Fechar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button id="botaoAna" class="btn btn-outline-info col-6" data-toggle="modal"
+                                data-target="#exampleModal" type="button">Analisar</button>
+                            <button id="botaoVer" class="btn btn-outline-danger col-6" data-toggle="modal"
+                                data-target="#ModalCena" type="button">Ver Cena</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3 col-sm-12 col-md-3 col-lg-3">
+                <img src="Pôsters/Pôster_MissãoImpossível.jpg" class="card-img-top" alt="...">
+                <div class="card-body filme2">
+                    <h2 id="tituloFilme" class="card-title">Missão: Impossível - Nação Secreta (2015)</h2>
+                    <p id="descricao" class="card-text">O agente do IMF Ethan Hunt e sua equipe enfrentam uma das missões mais difíceis: erradicar o Sindicato, uma organização secreta internacional de assassinos profissionais que está determinada a destruir o IMF.</p>
+                    <div class="d-grid gap-2 mx-auto">
+                        <div class="row">
+                            <div class="modal fade" id="ModalCena2">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-body" width="100%">
+                                            <video controls class="embed-responsive-item" width="100%">
+                                                <source src="Filmes/Cena - Filme Missão Impossível 5.mp4">
+                                                Seu navegador não suporta o elemento de vídeo.
+                                            </video>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Descubra</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body questions-container" id="filme2">
+
+                                            <div class="questions">
+                                                Você acha que essa cena pode ser possível?
+                                            </div>
+                                            <div class="text-success">
+                                                <div>Parabens c acerto</div>
+
+                                                Explicação:
+                                            </div>
+                                            <div class="text-danger">
+                                                <div>Puts c erro</div>
+
+                                                Explicação:
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="questions-buttons">
+                                                <a href="#p2">
+                                                    <button class="btn btn-primary" id="sim2">Sim</button>
+                                                    <button class="btn btn-danger" id="nao2">Não</button>
+                                                </a>
+                                            </div>
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Fechar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button id="botaoAna2" class="btn btn-outline-info col-6" data-toggle="modal"
+                                data-target="#exampleModal2" type="button">Analisar</button>
+                            <button id="botaoVer" class="btn btn-outline-danger col-6" data-toggle="modal"
+                                data-target="#ModalCena2" type="button">Ver Cena</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3 col-sm-12  col-md-4 col-lg-3">
+                <img src="Pôsters/Pôster_HomemAranha.jpg" class="card-img-top" alt="...">
+                <div class="card-body filme3">
+                    <h2 id="tituloFilme" class="card-title">O Espetacular Homem-Aranha 2 - A Ameaça de Electro (2014)
+                    </h2>
+                    <p id="descricao" class="card-text">O jovem Peter Parker está fascinado com as habilidades que adquiriu como Homem-Aranha. Agora, ele precisa lidar com dois problemas: o retorno de um velho amigo, Harry Osborn, e a chegada de um vilão mais forte e poderoso, Electro.</p>
+                    <div class="d-grid gap-2 mx-auto">
+                        <div class="row">
+                            <div class="modal fade" id="ModalCena3">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-body" width="100%">
+                                            <video controls class="embed-responsive-item" width="100%">
+                                                <source src="Filmes/Cena - Filme O Espetacular Homem-Aranha 2.mp4">
+                                                Seu navegador não suporta o elemento de vídeo.
+                                            </video>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Descubra</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body questions-container" id="filme3">
+
+                                            <div class="questions">
+                                                Você acha que essa cena pode ser possível?
+                                            </div>
+                                            <div class="text-success">
+                                                <div>Parabens c acerto</div>
+
+                                                Explicação:
+                                            </div>
+                                            <div class="text-danger">
+                                                <div>Puts c erro</div>
+
+                                                Explicação:
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="questions-buttons">
+                                                <a href="#p2">
+                                                    <button class="btn btn-primary" id="sim3">Sim</button>
+                                                    <button class="btn btn-danger" id="nao3">Não</button>
+                                                </a>
+                                            </div>
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Fechar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button id="botaoAna3" class="btn btn-outline-info col-6" data-toggle="modal"
+                                data-target="#exampleModal3" type="button">Analisar</button>
+                            <button id="botaoVer" class="btn btn-outline-danger col-6" data-toggle="modal"
+                                data-target="#ModalCena3" type="button">Ver Cena</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3 col-sm-12  col-md-4 col-lg-3">
+                <img src="Pôsters/Pôster_VelozeseFuriosos.jpg" class="card-img-top" alt="...">
+                <div class="card-body filme4">
+                    <h2 id="tituloFilme" class="card-title">Velozes e Furiosos 10 (2023)</h2>
+                    <p id="descricao" class="card-text">Dom Toretto e sua família precisam lidar com o adversário mais letal que já enfrentaram. Alimentada pela vingança, uma ameaça terrível emerge das sombras do passado para destruir o mundo de Dom e todos que ele ama.</p>
+                    <div class="d-grid gap-2 mx-auto">
+                        <div class="row">
+                            <div class="modal fade" id="ModalCena4">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-body" width="100%">
+                                            <video controls class="embed-responsive-item" width="100%">
+                                                <source src="Filmes/Cena - Filme Velozes e Furiosos 10.mp4">
+                                                Seu navegador não suporta o elemento de vídeo.
+                                            </video>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Descubra</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body questions-container" id="filme4">
+
+                                            <div class="questions">
+                                                Você acha que essa cena pode ser possível?
+                                            </div>
+                                            <div class="text-success">
+                                                <div>Parabens c acerto</div>
+
+                                                Explicação:
+                                            </div>
+                                            <div class="text-danger">
+                                                <div>Puts c erro</div>
+
+                                                Explicação:
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="questions-buttons">
+                                                <a href="#p2">
+                                                    <button class="btn btn-primary" id="sim4">Sim</button>
+                                                    <button class="btn btn-danger" id="nao4">Não</button>
+                                                </a>
+                                            </div>
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Fechar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button id="botaoAna4" class="btn btn-outline-info col-6" data-toggle="modal"
+                                data-target="#exampleModal4" type="button">Analisar</button>
+                            <button id="botaoVer" class="btn btn-outline-danger col-6" data-toggle="modal"
+                                data-target="#ModalCena4" type="button">Ver Cena</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3 col-sm-12  col-md-4 col-lg-3">
+                <img src="Pôsters/Pôster_Uncharted.jpg" class="card-img-top" alt="...">
+                <div class="card-body filme5">
+                    <h2 id="tituloFilme" class="card-title">Uncharted: Fora do Mapa (2022)</h2>
+                    <p id="descricao" class="card-text">Nathan Drake e seu parceiro canastrão Victor "Sully" Sullivan
+                        embarcam em uma perigosa busca para encontrar o maior tesouro jamais encontrado. Enquanto isso,
+                        eles também rastreiam pistas que podem levar ao irmão perdido de Nathan.</p>
+                    <div class="d-grid gap-2 mx-auto">
+                        <div class="row">
+                            <div class="modal fade" id="ModalCena5">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-body" width="100%">
+                                            <video controls class="embed-responsive-item" width="100%">
+                                                <source src="Filmes/Cena - Filme Uncharted.mp4">
+                                                Seu navegador não suporta o elemento de vídeo.
+                                            </video>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Descubra</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body questions-container" id="filme5">
+
+                                            <div class="questions">
+                                                Você acha que essa cena pode ser possível?
+                                            </div>
+                                            <div class="text-success">
+                                                <div>Parabens c acerto</div>
+
+                                                Explicação:
+                                            </div>
+                                            <div class="text-danger">
+                                                <div>Puts c erro</div>
+
+                                                Explicação:
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="questions-buttons">
+                                                <a href="#p2">
+                                                    <button class="btn btn-primary" id="sim5">Sim</button>
+                                                    <button class="btn btn-danger" id="nao5">Não</button>
+                                                </a>
+                                            </div>
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Fechar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button id="botaoAna5" class="btn btn-outline-info col-6" data-toggle="modal"
+                                data-target="#exampleModal5" type="button">Analisar</button>
+                            <button id="botaoVer" class="btn btn-outline-danger col-6" data-toggle="modal"
+                                data-target="#ModalCena5" type="button">Ver Cena</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3 col-sm- col-md-2 col-lg-3">
+                <img src="Pôsters/Pôster_StarWars.jpg" class="card-img-top" alt="...">
+                <div class="card-body filme6">
+                    <h2 id="tituloFilme" class="card-title">Star Wars: Os Últimos Jedi (2017)</h2>
+                    <p id="descricao" class="card-text">A tranquila e solitária vida de Luke Skywalker sofre uma
+                        reviravolta quando ele conhece Rey, uma jovem que mostra fortes sinais da Força. O desejo dela
+                        de aprender o estilo dos Jedi força Luke a tomar uma decisão que mudará sua vida para sempre.
+                        Enquanto isso, Kylo Ren e o General Hux lideram a Primeira Ordem para um ataque total contra
+                        Leia e a Resistência pela supremacia da galáxia.</p>
+                    <div class="d-grid gap-2 mx-auto">
+                        <div class="row">
+                            <div class="modal fade" id="ModalCena6">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-body" width="100%">
+                                            <video controls class="embed-responsive-item" width="100%">
+                                                <source src="Filmes/Cena - Star Wars 8.mp4">
+                                                Seu navegador não suporta o elemento de vídeo.
+                                            </video>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Descubra</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body questions-container" id="filme6">
+
+                                            <div class="questions">
+                                                Você acha que essa cena pode ser possível?
+                                            </div>
+                                            <div class="text-success">
+                                                <div>Parabens c acerto</div>
+
+                                                Explicação:
+                                            </div>
+                                            <div class="text-danger">
+                                                <div>Puts c erro</div>
+
+                                                Explicação:
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="questions-buttons">
+                                                <a href="#p2">
+                                                    <button class="btn btn-primary" id="sim6">Sim</button>
+                                                    <button class="btn btn-danger" id="nao6">Não</button>
+                                                </a>
+                                            </div>
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Fechar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button id="botaoAna6" class="btn btn-outline-info col-6" data-toggle="modal"
+                                data-target="#exampleModal6" type="button">Analisar</button>
+                            <button id="botaoVer" class="btn btn-outline-danger col-6" data-toggle="modal"
+                                data-target="#ModalCena6" type="button">Ver Cena</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section id="contato" id="contato-form">
+        <h1>Contato</h1>
+        <div class="container">
+            <div class="">
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSecjTJjzXCjwem_8o4jh3ASBq3TOsaiX7iBtKGm9wIivyA0Vg/viewform?embedded=true"
+                    frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+            </div>
+        </div>
+    </section>
+
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+    <footer id="final">
+        <p> 2023 &copy; Todos os direitos reservados a Luiz Felipe e Eliseu da Luz</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="cinec.js"></script>
+
+</body>
+</html>
