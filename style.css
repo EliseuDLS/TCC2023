@@ -113,36 +113,6 @@ p{
   font-style: oblique;
 }
 
-#filme1{
-  /* width: 200px;
-  height: 300px; */
-}
-
-#filme2{
-  /* width: 200px;
-  height: 300px; */
-}
-
-#filme3{
-  /* width: 200px;
-  height: 300px; */
-}
-
-#filme4{
-  /* width: 200px;
-  height: 300px; */
-}
-
-#filme5{
-  /* width: 200px;
-  height: 300px; */
-}
-
-#filme6{
-  /* width: 200px;
-  height: 300px; */
-}
-
 #filmesanalis h1{
   font-style:oblique;
   margin: 0;
@@ -259,4 +229,14 @@ a-navlink{
 
 .pergunta{
   padding-bottom: 20px;
+}
+
+/*fundo posters*/
+#filmes {
+  background-color: rgb(150, 44, 44);
+}
+
+/*fundo rodapé*/
+#contato {
+  background-color: #616161;
 }
