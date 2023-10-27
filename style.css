@@ -91,7 +91,7 @@ iframe {
 }
 
 footer {
-  background-color: #cc0c0c;
+  background-color: #1f1f1f;
   color: #000;
   text-align: center;
   padding: 1px;
@@ -100,6 +100,7 @@ footer {
 p{
   color: white;
   font-weight: bolder;
+    font-family:'Courier New', Courier, monospace;
 }
 
 #botao {
@@ -233,10 +234,10 @@ a-navlink{
 
 /*fundo posters*/
 #filmes {
-  background-color: rgb(150, 44, 44);
+  background-color: rgb(34, 34, 34);
 }
 
 /*fundo rodapé*/
 #contato {
-  background-color: #616161;
+  background-color: #5a636b;
 }
