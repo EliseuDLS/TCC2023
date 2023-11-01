@@ -26,8 +26,7 @@ h1{
   letter-spacing: 10px;
 }
 
-
-#contato h1{
+#feedback h1{
   margin-top: 20px;
   padding: 10px;
   font-size: 3rem;
@@ -36,6 +35,16 @@ h1{
   display: inline-block;
   font-family: 'Abril Fatface', cursive;
   letter-spacing: 4px;
+}
+
+#contato h1{
+  margin-top: 60px;
+  padding: 10px;
+  font-size: 3rem;
+  color: rgb(0, 0, 0);
+  background-color:rgb(255, 255, 255);
+  font-family: 'Abril Fatface', cursive;
+  letter-spacing: 3px;
 }
 
 .navbar {
@@ -98,20 +107,14 @@ footer {
 }
 
 p{
-  color: white;
+  color: rgb(255, 255, 255);
   font-weight: bolder;
-    font-family:'Courier New', Courier, monospace;
+  font-size: 19px;
 }
 
 #botao {
   width: auto;
   height: auto;
-}
-
-#ese{
-  font-family:'Courier New', Courier, monospace;
-  font-size: 20px;
-  font-style: oblique;
 }
 
 #filmesanalis h1{
@@ -123,10 +126,6 @@ p{
   display: inline-block;
   font-family: 'Abril Fatface', cursive;
   letter-spacing: 10px;
-}
-
-#filmesanalis p{
-  font-size: 20px;
 }
 
 #pos{
@@ -143,6 +142,38 @@ p{
   font-size: 1rem;
   font-style: italic;
 
+}
+
+#feedback-form{
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+#feedback-form h1{
+  position: fixed;
+  margin-right: 100px;
+  font-size: 5rem;
+  background-color: none;
+}
+
+#feedback-form h2{
+  margin-left: 10px;
+}
+
+#feedback-form form{
+  margin-left: 10px;
+  display:contents;
+}
+
+#feedback-form button{
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+#feedback-form label{
+  margin-left: 30px;
+  font-size: 1.2rem;
+  font-style: inherit;
 }
 
 #contato-form{
@@ -184,10 +215,6 @@ p{
 
 #titulofilme{
   font-size: 3rem;
-}
-
-#final {
-  font-size: 15px;
 }
 
 a-navlink{
@@ -234,10 +261,15 @@ a-navlink{
 
 /*fundo posters*/
 #filmes {
-  background-color: rgb(34, 34, 34);
+  background-color: #111111;
 }
 
-/*fundo rodapé*/
+/*fundo feedback*/
+#feedback {
+  background-color: #1B1B1B;
+}
+
+/*fundo contato*/
 #contato {
-  background-color: #5a636b;
+  background-color: #313131;
 }
