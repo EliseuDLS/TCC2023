@@ -235,13 +235,6 @@ a-navlink{
   z-index: 99;
 }
 
-#butaoFinal{
-  display: flex;
-  right: 45px;
-  bottom: 45px;
-  z-index: 99;
-}
-
 .custom-dialog { 
   background-color: #fff;
   padding: 10px 20px 10px 20px;
@@ -272,4 +265,9 @@ a-navlink{
 /*fundo contato*/
 #contato {
   background-color: #313131;
+}
+
+.contato{
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
