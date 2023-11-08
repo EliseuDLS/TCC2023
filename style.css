@@ -267,7 +267,35 @@ a-navlink{
   background-color: #313131;
 }
 
-.contato{
+.contato {
   margin-left: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.card-img-top{
+  margin-top: 1rem;
+}
+
+#insta{
+  color: #ffffff;
+  font-size: 20px;
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#github{
+  color: #ffffff;
+  font-size: 20px;
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+
+#luiz{
+  border-radius: 120px;
+}
+
+#eliseu{
+  border-radius: 120px;
+  margin-top: 20px;
 }
