@@ -293,9 +293,14 @@ a-navlink{
 
 #luiz{
   border-radius: 120px;
+  margin-top: 20px;
 }
 
 #eliseu{
   border-radius: 120px;
   margin-top: 20px;
+}
+
+.contatoStyle{
+  padding: 20px;
 }
