@@ -287,17 +287,18 @@ a-navlink{
 #github{
   color: #ffffff;
   font-size: 20px;
-  margin-left: 50px;
+  margin-left: 65px;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 
 #luiz{
-  border-radius: 120px;
+  border-radius: 3rem;
   margin-top: 20px;
 }
 
 #eliseu{
-  border-radius: 120px;
+  border-radius: 3rem;
   margin-top: 20px;
 }
 
