@@ -1,3 +1,3 @@
-# TCC2023
+# Trabalho de Conclusão de Curso 2023
 
-### Site desenvolvido para analisar algumas cenas de filmes famosos e informar se elas podem ser possíveis na vida real
+## Website desenvolvido com a finalidade de analisar cenas de filmes famosos e afirmar se elas poderiam ser possíveis ou não na vida real
