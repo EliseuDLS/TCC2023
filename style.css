@@ -37,6 +37,12 @@ h1{
   letter-spacing: 4px;
 }
 
+#home p{
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 1px;
+}
+
 #contato h1{
   margin-top: 60px;
   padding: 10px;
@@ -117,7 +123,7 @@ p{
 }
 
 #filmesanalis h1{
-  font-style:oblique;
+  font-style: oblique;
   margin: 0;
   font-size: 2rem;
   color: rgb(0, 0, 0);
@@ -125,6 +131,12 @@ p{
   display: inline-block;
   font-family: 'Abril Fatface', cursive;
   letter-spacing: 10px;
+}
+
+#filmesanalis p{
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 1px;
 }
 
 #pos{
@@ -161,7 +173,7 @@ p{
 
 #feedback-form form{
   margin-left: 10px;
-  display:contents;
+  display: contents;
 }
 
 #feedback-form button{
@@ -193,7 +205,7 @@ p{
 
 #contato-form form{
   margin-left: 10px;
-  display:contents;
+  display: contents;
 }
 
 #contato-form button{
