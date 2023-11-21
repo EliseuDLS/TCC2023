@@ -221,7 +221,11 @@ p{
 
 #descricao{
   font-size: 18px;
-  color: #181818;
+  color: #000000;
+}
+
+#rcerta {
+  font-size: 28px;
 }
 
 #titulofilme{
@@ -257,10 +261,20 @@ a-navlink{
 
 .explicacao{
   padding-top: 20px;
+  font-size: 18px;
 }
 
 .pergunta{
   padding-bottom: 20px;
+  font-size: 18px;
+}
+
+.text-success{
+  font-size: 18px;
+}
+
+.text-danger{
+  font-size: 18px;
 }
 
 /*fundo posters*/
